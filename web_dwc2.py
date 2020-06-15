@@ -593,7 +593,7 @@ class web_dwc2:
 			},
 			"speeds": {},
 			"sensors": {
-				"fanRPM": 0
+				"fanRPM": -1
 			},
 			"params": {
 				"fanPercent": [] ,
@@ -609,7 +609,7 @@ class web_dwc2:
 				},
 				"names": []
 			} ,
-			"probe": {} ,
+			# "probe": {} ,
 			"axisNames": "" ,
 			"tools": [] ,
 			"volumes": 1,
@@ -660,8 +660,8 @@ class web_dwc2:
 			},
 			"seq": len(self.gcode_reply),
 			"sensors": {
-				"probeValue": 0,
-				"fanRPM": 0
+			# 	# "probeValue": 0,
+				"fanRPM": -1
 			},
 			"temps": {
 				"bed": {
@@ -767,8 +767,8 @@ class web_dwc2:
 			},
 			"seq": len(self.gcode_reply),
 			"sensors": {
-				"probeValue": 0,
-				"fanRPM": 0
+			# 	# "probeValue": 0,
+				"fanRPM": -1
 			},
 			"temps": {
 				"bed": {
@@ -812,11 +812,11 @@ class web_dwc2:
 			"volumes": 1,
 			"mountedVolumes": 1,
 			"name": self.printername,
-			"probe": {
-				"threshold": 100,
-				"height": 0,
-				"type": 8
-			},
+			# "probe": {
+			# 	"threshold": 100,
+			# 	"height": 0,
+			# 	"type": 8
+			# },
 			"tools": [
 				{
 					"number": extr_stat.index(ex_),
@@ -918,8 +918,8 @@ class web_dwc2:
 			},
 			"seq": len(self.gcode_reply),
 			"sensors": {
-				"probeValue": 0,
-				"fanRPM": 0
+				# "probeValue": 0,
+				"fanRPM": -1
 			},
 			"temps": {
 				"bed": {
