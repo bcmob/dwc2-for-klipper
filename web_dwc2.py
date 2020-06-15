@@ -1,3 +1,4 @@
+# -*- coding:utf-8 -*-
 # A Json api to get data from klippy through http
 #
 # This file may be distributed under the terms of the GNU GPLv3 license.
@@ -1236,7 +1237,7 @@ class web_dwc2:
 	
 	
 	#	parses gcode commands into params - lifted from gcode._process_commands
-	args_r = re.compile('([A-Z_]+|[A-Z*/])')
+	args_r = re.compile('([A-ZА-Я_]+|[A-ZА-Я*/])')
 	def parse_params(self, line, need_ack=False):
 		line = line.strip()
 		cpos = line.find(';')
