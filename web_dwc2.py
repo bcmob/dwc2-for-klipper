@@ -1237,7 +1237,7 @@ class web_dwc2:
 	
 	
 	#	parses gcode commands into params - lifted from gcode._process_commands
-	args_r = re.compile('([A-ZА-Я_]+|[A-ZА-Я*/])')
+	args_r = re.compile('([A-Z\d_]+|[A-Z*/])')
 	def parse_params(self, line, need_ack=False):
 		line = line.strip()
 		cpos = line.find(';')
