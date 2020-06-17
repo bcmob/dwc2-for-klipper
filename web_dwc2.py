@@ -1186,6 +1186,7 @@ class web_dwc2:
 			'M0': self.cmd_M0 ,			#	cancel SD print
 			'M24': self.cmd_M24 ,		#	resume sdprint
 			'M32': self.cmd_M32 ,		#	Start sdprint
+			'M80': self.cmd_M999 ,		#	RRF ATX ON, klipper Restart
 			'M98': self.cmd_M98 ,		#	run macro
 			'M106': self.cmd_M106 ,		#	set fan
 			'M120': self.cmd_M120 ,		#	save gcode state

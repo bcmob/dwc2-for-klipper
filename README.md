@@ -1,3 +1,5 @@
+## sed -i 's/pluuuk/bcmob/g' ~/klipper-DWC2-installer/installer.sh
+
 # dwc2-for-klipper
 A translator between DWC2 and Klipper
 
