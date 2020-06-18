@@ -508,7 +508,7 @@ class web_dwc2:
 
 		#	allow - set heater, cancelprint, set bed, ,pause, resume, set fan, set speedfactor, set extrusion multipler, babystep, ok in popup
 		midprint_allow = [ 'DUMP_TMC', 'G10', 'GET_POSITION', 'HELP', 'M0', 'M140', 'M24', 'M25', 'M104', 'M106', 'M107', 'M112', 'M114', 'M115', 'M140', 'M204', 'M220', 'M221', 'M290', 'M292', 'QUERY_FILAMENT_SENSOR', 'SET_TMC_CURRENT', 'SET_PIN',
-				'SET_PRESSURE_ADVANCE', 'SET_VELOCITY_LIMIT', 'T' ]
+				'SET_PRESSURE_ADVANCE', 'SET_VELOCITY_LIMIT', 'T', 'GET_RETRACTION', 'SET_RETRACTION' ]
 
 		#	Handle emergencys - just do it now
 		for code in gcodes:
@@ -1238,7 +1238,7 @@ class web_dwc2:
 	
 	
 	#	parses gcode commands into params - lifted from gcode._process_commands
-	args_r = re.compile('([A-Z_]+|[A-Z*/])')
+	args_r = re.compile('([A-ZА-Я_]+|[A-Z*/])')
 	def parse_params(self, line, need_ack=False):
 		line = line.strip()
 		cpos = line.find(';')
